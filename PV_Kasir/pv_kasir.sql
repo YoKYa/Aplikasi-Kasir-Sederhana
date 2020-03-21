@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 23 Feb 2020 pada 14.48
+-- Waktu pembuatan: 21 Mar 2020 pada 11.25
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.1
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `pv_kasir`
 --
+CREATE DATABASE IF NOT EXISTS `pv_kasir` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `pv_kasir`;
 
 -- --------------------------------------------------------
 
@@ -35,6 +37,14 @@ CREATE TABLE `keranjang` (
   `harga_pesanan` int(20) NOT NULL,
   `banyak_pesanan` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `keranjang`
+--
+
+INSERT INTO `keranjang` (`id_pesanan`, `admin_pesanan`, `nama_pesanan`, `harga_pesanan`, `banyak_pesanan`) VALUES
+('GRG001', 'ayokya', 'Gorengan', 750, 4),
+('NSBKS001', 'ayokya', 'Nasi Bungkus', 8000, 4);
 
 -- --------------------------------------------------------
 
@@ -71,7 +81,7 @@ CREATE TABLE `riwayat` (
   `no_pesanan` int(11) NOT NULL,
   `admin_pesanan` varchar(50) NOT NULL,
   `total_pesanan` int(11) NOT NULL,
-  `tanggal_pesanan` date NOT NULL DEFAULT current_timestamp()
+  `tanggal_pesanan` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -79,11 +89,14 @@ CREATE TABLE `riwayat` (
 --
 
 INSERT INTO `riwayat` (`no_pesanan`, `admin_pesanan`, `total_pesanan`, `tanggal_pesanan`) VALUES
-(1, 'AYoKYa', 10000, '2020-02-22'),
-(2, 'AYoKYa', 18000, '2020-02-22'),
-(3, 'AYoKYa', 18750, '2020-02-22'),
-(4, 'AYoKYa', 750, '2020-02-22'),
-(5, 'aYoKYa', 19750, '2020-02-23');
+(1, 'AYoKYa', 10000, '2020-02-21 17:00:00'),
+(2, 'AYoKYa', 18000, '2020-02-21 17:00:00'),
+(3, 'AYoKYa', 18750, '2020-02-21 17:00:00'),
+(4, 'AYoKYa', 750, '2020-02-21 17:00:00'),
+(5, 'aYoKYa', 19750, '2020-02-22 17:00:00'),
+(6, 'ayokya', 19000, '2020-02-23 17:00:00'),
+(7, 'ayokya', 750, '2020-02-23 17:00:00'),
+(8, 'yokya1', 750, '2020-02-23 17:00:00');
 
 -- --------------------------------------------------------
 
@@ -147,7 +160,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT untuk tabel `riwayat`
 --
 ALTER TABLE `riwayat`
-  MODIFY `no_pesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `no_pesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
