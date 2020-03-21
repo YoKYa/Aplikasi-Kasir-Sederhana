@@ -6,7 +6,7 @@
 #
 ##    1. Import pv_kasir.sql (file ada di dalam folder PV_Kasir)
 #    
-##   2. Pindahkan Folder ini ke folder htdocs pada xampp
+##    2. Pindahkan Folder ini ke folder htdocs pada xampp
 #    
 ##    3. Buka xampp dan start apache dan mysql
 #    
