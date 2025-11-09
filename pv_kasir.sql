@@ -88,15 +88,6 @@ CREATE TABLE `riwayat` (
 -- Dumping data untuk tabel `riwayat`
 --
 
-INSERT INTO `riwayat` (`no_pesanan`, `admin_pesanan`, `total_pesanan`, `tanggal_pesanan`) VALUES
-(1, 'AYoKYa', 10000, '2020-02-21 17:00:00'),
-(2, 'AYoKYa', 18000, '2020-02-21 17:00:00'),
-(3, 'AYoKYa', 18750, '2020-02-21 17:00:00'),
-(4, 'AYoKYa', 750, '2020-02-21 17:00:00'),
-(5, 'aYoKYa', 19750, '2020-02-22 17:00:00'),
-(6, 'ayokya', 19000, '2020-02-23 17:00:00'),
-(7, 'ayokya', 750, '2020-02-23 17:00:00'),
-(8, 'yokya1', 750, '2020-02-23 17:00:00');
 
 -- --------------------------------------------------------
 
@@ -112,17 +103,6 @@ CREATE TABLE `users` (
   `user_acces` tinyint(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data untuk tabel `users`
---
-
-INSERT INTO `users` (`id_user`, `username`, `email`, `password`, `user_acces`) VALUES
-(34, 'AYoKYa', 'yogiekaprastiya1@gmail.com', '$2y$10$zs7r/9uxzDpa9nNJGti4Q.BWyB.nLHTYQ45FjZgfxEvJTdNsnWYL6', 1),
-(37, 'yokya1', 'mita1@gmail.com', '$2y$10$8qnVb8tmyfqFq/cm6uguweGrVDGae6p2UHJVGpGmn7qYHtQUA60gq', 0),
-(39, 'yokya2', 'mita@gmail.com', '$2y$10$KVEdLo3nEKqLVqQTMsn/eOiMeujfFlURI0luh/SnX0Yqs3cwQt4dm', 0),
-(40, 'yokya3', 'yogi@gmail.com', '$2y$10$Bq75vAursQ/btOvajfZK..DBHhGILibQvxuW6lkkPon8JvOj/nIu2', 0);
-
---
 -- Indexes for dumped tables
 --
 
