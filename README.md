@@ -27,19 +27,21 @@ Cocok untuk pembelajaran dan usaha kecil.
 
 ---
 
-## 📁 Struktur Folder (Ringkasan)
+## 📂 Struktur Folder (Ringkasan)
+
 PV_Kasir/
 ├── assets/
-│ ├── css/
-│ └── js/
+│   ├── css/
+│   └── js/
 ├── pages/
-│ ├── index.php
-│ ├── login.php
-│ ├── register.php
-│ ├── keranjang.php
-│ ├── riwayat.php
+│   ├── index.php
+│   ├── login.php
+│   ├── register.php
+│   ├── keranjang.php
+│   └── riwayat.php
 └── database/
-└── pv_kasir.sql
+    └── pv_kasir.sql
+
 
 
 ---
@@ -101,11 +103,6 @@ Saat pertama kali menjalankan aplikasi, lakukan login atau register.
 | Login | Masuk ke aplikasi |
 
 > Jika login gagal, lakukan **Register** terlebih dahulu.
-
----
-
-## 📸 Screenshot
-> *(Opsional — tambahkan gambar untuk mempercantik README)*
 
 ---
 
