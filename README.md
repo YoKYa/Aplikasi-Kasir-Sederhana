@@ -27,25 +27,6 @@ Cocok untuk pembelajaran dan usaha kecil.
 
 ---
 
-## 📂 Struktur Folder (Ringkasan)
-
-PV_Kasir/
-├── assets/
-│   ├── css/
-│   └── js/
-├── pages/
-│   ├── index.php
-│   ├── login.php
-│   ├── register.php
-│   ├── keranjang.php
-│   └── riwayat.php
-└── database/
-    └── pv_kasir.sql
-
-
-
----
-
 ## 🚀 Cara Instalasi dan Menjalankan Aplikasi
 
 ### **1. Install XAMPP**
